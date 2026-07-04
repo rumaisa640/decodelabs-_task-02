@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" media="screen and (max-width: 1170px )" href="rumaisa mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <title>portfolio</title>
+
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/*home section*/
+
+#home .home-section h1{
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+
+
+}
+.home-section{
+    padding:100px 50px 100px 50px
+}
+#home{
+    height: 780px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+}
+.heading p{
+    font-size: 18px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding-left: 10px;
+
+}
+.home-section .paragraph p{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 20px 50px;
+}
+.home-section .buttons button{
+    background-color: #DDA096;
+padding: 10px 15px;
+cursor: pointer;
+margin: 0px 10px;
+border-radius: 10px;
+transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+
+}
+.home-section .buttons a{
+    text-decoration: none;
+    color: black;
+
+}
+/*navigation bar*/
+.navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    height: 60px;
+
+}
+
+
+
+.navbar ul{
+    display: flex;
+}
+.navbar::before{
+    content: "";
+    background-color:#DDA096;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+
+}
+.navbar ul li a{
+    color:black;
+    display: block;
+    padding: 3px 22px;
+    border: 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    color:#DDA096;
+    animation: moveUpDown 0.3s ease infinite alternate; /* Animation on hover */
+
+    text-decoration: none;
+}
+
+
+    
+@keyframes nav-buttons1 {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.buttons {
+    animation: nav-buttons1 2s forwards; /* Adjust duration as needed */
+    
+}
+
+.home-section .buttons button:hover{
+    background-color:rgb(247, 247, 247);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        animation: zoomInOut 0.3s ease forwards;
+
+    
+}
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1); /* Default scale */
+    }
+    50% {
+        transform: scale(1.1); /* Zoom in halfway */
+    }
+    100% {
+        transform: scale(1); /* Zoom back to normal */
+    }
+}
+
+.home-section .nav-buttons button:hover , button:focus{
+    background-color:#DDA096;
+    
+}
+#home .icons{
+    padding: 20px 10px;
+}
+#home .icons i{
+    padding: 10px;
+    font-size: 20px;
+}
+#home .icons i:hover{
+    color:#DDA096 ;
+    animation: moveUpDown 0.3s ease infinite alternate; /* Animation on hover */
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+hr{
+    margin-top: 50px;
+    height: 3px;
+    background-color: black;
+}
+#home .my-image img{
+    height: 100%;
+}
+
+/*About section*/
+
+ .h-primary{
+    text-align: center;
+    font-size: 34px;
+    
+   
+
+}
+ .h-primary h1{
+    font-weight: 500;
+    padding-top: 65px;
+   
+
+}
+.mainAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.mainAbout .box{
+    padding: 50px;
+}
+.mainAbout i{
+    background-color: #DDA096;
+    color:black;
+    font-size: 53px;
+width: 100px;
+padding: 20px 0px;
+border-radius: 70px;
+margin-bottom: 10px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+.mainAbout h1{
+    color:black;
+    font-weight: 700;
+}
+.mainAbout p{
+    color:black;
+    font-weight: 200;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.skill-img img{
+height: 150px;
+text-align: center;}
+.skill-img{
+    text-align: center;
+    margin-left: 250px;
+    margin-top: -40px;
+}
+.skill-img p{
+    font-size: 14px;
+    font-weight: 300;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color:#555555
+}
+.skill-img h1{
+    font-size: 25px;
+    font-weight: 700px;
+    padding: 10px;
+    color: rgb(75, 75, 75);
+}
+
+
+/*skills*/
+.wrapper{
+        width: 400px;
+        font-family: 'Roboto', sans-serif;
+	margin:0 auto;
+    }
+    .skill {
+        margin-bottom: 35px;
+        position: relative;
+			overflow-x:hidden;
+			
+    }
+    .skill > p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1716;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #959595;
+        bottom: 0;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background:#DDA096;
+        display: block;
+        position: relative;
+    }
+
+    /* SKILL 1 */
+    .skill1{
+        width: 95%;
+			
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 5px solid#DDA096;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .skill-bar {
+        position: relative;
+			
+    }
+
+    .skill1 .skill-count1 {
+        right: 0;
+    }
+    /* SKILL 2 */
+    .skill2{
+        width: 85%;
+    }
+
+    .skill2 .skill-count2 {
+        right: 0;
+    }
+    /* SKILL 3 */
+    .skill3{
+        width: 75%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+    }
+
+    /* SKILL 4 */
+    .skill4{
+        width: 65%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+    /* SKILL 5 */
+    .skill5{
+        width: 80%;
+    }
+
+    .skill5 .skill-count5 {
+        right: 0;
+    }
+
+    /* SKILL 6 */
+    .skill6{
+        width: 90%
+    }
+
+    .skill6 .skill-count6 {
+        right: 0;
+    }
+/* GITHUB SOURCE STYLE  */
+.github-source{
+	float:right;
+	display:block;
+	color:#fff;
+	margin:0 20px;
+	position: relative;
+	z-index:999999;
+	top:0;
+}
+.github-source i{
+	font-size:50px;
+	color:#000
+}
+.about-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+    margin-top: 15px;
+}
+
+/*services*/
+#services{
+    background-color: rgb(246, 246, 246);
+
+}
+
+.mainServices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px 20px 50px;
+}
+#services{
+    text-align: center;
+}
+#services .paragraph p{
+    padding: 28px 200px;
+    text-align: center;
+font-weight: 200;
+word-spacing: 2px;
+letter-spacing: 1px;
+line-height: 27px;
+color:black;
+}
+
+
+
+ .mainServices .box1{
+    padding:  30px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 50px;
+    
+    
+ }
+ .mainServices .box1 i{
+    font-size: 53px;
+    padding-bottom: 30px;
+ }
+ 
+ .mainServices .box1 h1{
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    padding-bottom: 13px;
+    color:#DDA096;
+    font-weight: 700;
+ }
+ .mainServices .box1 p{
+    font-size: 16px;
+    padding-bottom: 30px;
+    font-weight: 300;
+    
+ }
+ .mainServices .box1:hover {
+    background-color: #DDA096;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+ }
+ .mainServices .box1:hover p  {
+    color: white;
+ }
+ .mainServices .box1:hover h1  {
+    color: black;
+ }
+ .mainServices .box1:hover i {
+    color:white;
+ }
+ #About hr{
+    width: 100px;
+    margin-left: 46.5%;
+    margin-top: -5px;
+
+ }
+ #services hr{
+    width: 100px;
+    margin-left: 46.5%;
+    margin-top: -5px;
+
+ }
+ .paragraph h1{
+    margin-top: 20px;
+ }
+/*experience*/
+.main-experience{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-column-gap: 30px;
+
+}
+.main-experience{
+    margin: 20px 50px 20px 50px;
+   
+
+}
+.main-experience .main-box2 p{
+padding-top: 10px;
+font-weight: 200;
+
+}
+.main-experience .main-box2{
+    background-color: rgb(246, 246, 246);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.main-experience .main-box2 h3{
+   font-weight: 400;
+   font-size: 12px;
+   color: grey;
+}
+.main-experience .box2 i{
+   background-color: #DDA096;
+   font-size: 25px;
+   padding: 20px;
+   border-radius: 50px;
+   position: relative;
+   margin-left: 40px;
+  top:30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+#experience hr{
+    width: 100px;
+    margin-left: 46.5%;
+    margin-top: -5px;
+
+ }
+
+ /*my work*/
+#mywork{
+    background-color: rgb(246, 246, 246);
+
+}
+ #mywork hr{
+    width: 100px;
+    margin-left: 46.5%;
+    margin-top: -5px;
+
+ }
+ .main-work .box3 img{
+    width: 350px;
+    height:200px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+ }
+ .main-work{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    margin: 50px 50px 20px 50px;
+    grid-row-gap: 20px;
+ }
+ .main-work .box3 button{
+    width: 350px;
+   padding: 8px;
+   position: relative;
+   top:-14px;
+   border-radius: 8px;
+   background-color: #DDA096;
+ }
+ .main-work .box3 a{
+    text-decoration: none;
+    color: black;
+ }
+ .main-work .box3 button:hover{
+    animation: zoomInOut 0.3s ease forwards;
+    cursor: pointer;
+
+    
+ }
+ /*contact*/
+ #mycontact .h-primary h1{
+    position: relative;
+    margin-top: -10px;
+
+ }
+ #mycontact hr{
+    width: 100px;
+    margin-left: 46.5%;
+    margin-top: -5px;
+
+ }
+
+ #mycontact .main-info{
+    display: flex;
+
+ }
+ #mycontact .main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+ }
+
+ #mycontact .form input {
+    width: 390px;
+    height: 40px;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+
+    
+ }
+ #mycontact .form textarea {
+    width: 803px;
+    height: 200px;
+    background-color: rgb(246, 246, 246);
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px;
+
+    
+ }
+ #mycontact .form button {
+    width: 150px;
+    padding: 10px;
+background-color: #DDA096;
+border-radius: 10px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+margin-left: 10px;
+margin-top: 10px;
+
+    
+ }
+ #mycontact .form button:hover {
+   
+
+    animation: zoomInOut 0.3s ease forwards;
+    cursor: pointer;
+
+ }
+
+    
+ 
+ #mycontact .heading  h1{
+   padding: 10px 0px;
+
+    
+ }
+ #mycontact .main-info  i{
+ 
+   color: #DDA096;
+   padding-right: 10px;
+   font-size: 23px;
+    
+ }
+ .main-info  {
+    padding: 10px;
+
+ }
+ .main-info p {
+    position: relative;
+    font-size: 14px;
+    color: grey;
+
+ }
+ .form{
+    margin: 20px;
+ }
+
+ 
+ 
+
+    </style>
+</head>
+<body>
+    
+    
+
+    <section id="home">
+        <div class="home-section">
+            <div class="heading">
+            <h1>Rumaisa fatima</h1>
+            <P>SOFTWARE ENGINEER</P>
+            </div>
+            <div class="paragraph">
+            <p>
+                "I'm an undergraduate student studying Software Engineering, with a focus on web development and UI/UX design.I'm dedicated to learning and growing in these fields."</p>
+                </div>
+
+            <div class="icons">
+                <i class="fa-brands fa-instagram" ></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </div>
+
+            <div class="buttons">
+                <button><a href="#About">view more about me</a></button>
+                <button><a href="#services">hire me</a></button>
+            </div>
+            <hr>
+
+        
+            </div>
+        <div class="my-image">
+            <img src="2.png" alt="">
+        </div>
+
+    </section>
+
+    <nav class="navbar">
+       
+     <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#About">About</a></li>
+        <li class="item"><a href="#services">Services</a></li>
+        <li class="item"><a href="#experience"> Experience</a></li>
+        <li class="item"><a href="#mywork"> Work</a></li>
+        <li class="item"><a href="#mycontact"> Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section id="About">
+        <div class="h-primary">
+            <h1>About</h1>
+            <hr>
+        </div>
+
+        <div class="mainAbout">
+            <div class=" box box1">
+                <i class="fa-regular fa-clock" ></i>
+                   <h1>Fast</h1>
+                <p>Fast load times and lag free interaction, my highest  priority.</p>
+            </div>
+            <div class=" box box2">
+                <i class="fa-solid fa-laptop" ></i>
+                <h1>Responsive</h1>
+                <p>My layouts will work on any device, big or small.</p>
+            </div>
+            <div class="box box3">
+                <i class="fa-regular fa-lightbulb"></i>
+                <h1>Intuitive</h1>
+                <p>Strong preference for easy to use, intuitive  UX/UI.</p>
+            </div>
+            <div class="box box4">
+                <i class="fa-solid fa-rocket"></i>
+                <h1>Dynamic</h1>
+                <p>Websites don't have to be static, I love making pages come  to life.</p>
+            </div>
+        </div>
+
+        <div class="about-skills">
+            <div class="skill-img">
+                <img src="1.png" alt="">
+                <h1>who's this girl?</h1>
+                <p>"I'm an undergraduate student studying Software Engineering,  <br>with a focus on web development and UI/UX design.  "</p>
+                <p style="padding-top: 10px;"><a href="" style="color: #DDA096; text-decoration: none; ">rumaisafatima196@gmail.com</a></p>
+            </div>
+           
+                
+<div class="wrapper">
+        <div class="skill">
+            <p>HTML5</p>
+            <div class="skill-bar skill1 wow slideInLeft animated">
+                <span class="skill-count1">95%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>CSS3</p>
+            <div class="skill-bar skill2 wow slideInLeft animated">
+                 <span class="skill-count2">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>FIGMA</p>
+            <div class="skill-bar skill3 wow slideInLeft animated">
+                <span class="skill-count3">75%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <p>JAVASCRIP</p>
+            <div class="skill-bar skill4 wow slideInLeft animated">
+                <span class="skill-count4">65%</span>
+            </div>
+        </div>
+        
+        <div class="skill">
+            <p>WORDPRESS</p>
+            <div class="skill-bar skill6 wow slideInLeft animated">
+                <span class="skill-count6">90%</span>
+            </div>
+        </div>
+    </div><!-- end of /.coloumn -->
+
+            </div>
+       
+    </section>
+
+
+
+
+    <section id="services">
+        <div class="h-primary">
+            <h1>Services</h1>
+            <hr>
+        </div>        
+
+        <div class="paragraph">
+            <h1>Why you hire me?</h1>
+<p>When you choose to hire me, you're gaining a professional with extensive skills in web development and UI/UX design, complemented by a strong command of MS Office. I excel in creating robust, user-centric websites and applications that marry functionality with aesthetics. My expertise in UI/UX design ensures intuitive interfaces that enhance user satisfaction and engagement. Moreover, my proficiency in MS Office empowers me to efficiently handle documentation, streamline communication, and contribute effectively to team dynamics and project success.</p>       
+ </div>
+
+        <div class="mainServices">
+            <div class="box1">
+                <i class="fa-brands fa-uikit"></i>
+                <h1>UI/UX design</h1>
+                <p>Specializing in intuitive interfaces and seamless user experiences to enhance digital interactions and  engagement.</p>
+            </div>
+            <div class="box1">
+                <i class="fa-solid fa-laptop"></i>
+                <h1>Web development</h1>
+                <p>Specializing in intuitive interfaces and seamless user experiences to enhance digital interactions and  engagement.</p>
+            </div>
+            <div class="box1">
+                <i class="fa-brands fa-joomla"></i>
+                <h1>Graphic designing</h1>
+                <p>Specializing in intuitive interfaces and seamless user experiences to enhance digital interactions and  engagement.</p>
+            </div>
+            <div class="box1">
+                <i class="fa-brands fa-microsoft"></i>
+                <h1>MS office</h1>
+                <p>Specializing in intuitive interfaces and seamless user experiences to enhance digital interactions and  engagement.</p>
+
+                
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="h-primary">
+            <h1>Experience</h1>
+            <hr>
+        </div>
+
+        <div class="main-experience">
+            <div class="box2">
+                <i class="fa-solid fa-book"></i>
+                <div class="main-box2">
+                    <h3>2023-2027</h3>
+                    <h1>bachlor's degree of Software Engineering</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <i class="fa-solid fa-book"></i>
+                <div class="main-box2">
+                    <h3>2023-2027</h3>
+                    <h1>Worpress developer</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <i class="fa-solid fa-book"></i>
+                <div class="main-box2">
+                    <h3>2023-2027</h3>
+                    <h1>UI/UX designer</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </div>
+            <div class="box2">
+                <i class="fa-brands fa-microsoft"></i>
+                <div class="main-box2">
+                    <h3>2023-2027</h3>
+                    <h1>MS office</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mywork">
+        <div class="h-primary">
+            <h1>My work</h1>
+            <hr>
+
+            <div class="main-work">
+                <div class="box3">
+                    <img src="work1.PNG" alt="">
+                    <div class="button">
+                        <button><a href="file:///C:/html%20&%20css/navbar.html">check the full view</a></button>
+                    </div>
+
+                </div>
+                <div class="box3">
+                    <img src="work2.PNG" alt="">
+                    <div class="button">
+                        <button><a href="file:///C:/html%20&%20css/task.html">check the full view</a></button>
+                    </div>
+
+                </div>
+                <div class="box3">
+                    <img src="work3.PNG" alt="">
+                    <div class="button">
+                        <button><a href="file:///C:/html%20&%20css/fooddelievery.html">check the full view</a></button>
+                    </div>
+
+                </div>
+                <div class="box3">
+                    <img src="work4.PNG" alt="">
+                    <div class="button">
+                        <button><a href="file:///C:/html%20&%20css/login_form.html">check the full view</a></button>
+                    </div>
+
+                </div>
+                <div class="box3">
+                    <img src="work5.PNG" alt="">
+                    <div class="button">
+                        <button><a href="">check the full view</a></button>
+                    </div>
+
+                </div>
+                <div class="box3">
+                    <img src="work6.PNG" alt="">
+                    <div class="button">
+                        <button><a href="https://www.figma.com/proto/4u701xX2fOvmWd686NaMP9/bakery?node-id=49-2&t=Ng7Eobb6YW8zbEi1-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=49%3A2">check the full view</a></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="mycontact">
+        <div class="h-primary">
+            <h1>Contact</h1>
+            <hr>
+            </div>
+
+            <div class="main-contact">
+                <div class="form">
+                    <div class="heading">
+                        <h1 style="margin-left: 30px;">Get in Touch </h1>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email"><br>
+                            <input type="text" placeholder="Subject"><br>
+                            <textarea name="message" id="" placeholder="message"></textarea>
+                            <div>
+                                <button>send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <div class="heading">
+                        <h1 style="margin-left: 10px;">Contact </h1>
+                    </div>
+                    <div class="main">
+                    <div class="main-info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>gulistan-e-johar,karachi</p>
+                    </div>
+                    <div class="main-info">
+                        <i class="fa-solid fa-mobile"></i>
+                         <p>7463523849</p>
+                    </div>
+                    <div class="main-info">
+                        <i class="fa-regular fa-envelope"></i>
+                    <p>rumaisafatima196@gamil.com</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="background-color: #DDA096;
+            padding: 20px;
+            text-align: center; opacity: 0.4;"> Copyright ©2024 All rights reserved </p>
+
+    </section>
+        
+</body>
+</html>
